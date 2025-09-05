@@ -1214,10 +1214,6 @@ footer {
     padding: 40px 60px 20px 60px;
 }
 
-.footer-top {
-    margin-left: 20%;
-}
-
 /* Brand logo section */
 .brand-logo {
     display: flex;
@@ -1225,26 +1221,45 @@ footer {
     /* flex: 1 1 250px; */
 }
 
+.brand-logo .Liputan6
+{
+    width: 200px;
+}
+
 .brand-logo img {
-    width: 78px;
+    width: 85px;
     height: auto;
     object-fit: contain;
 }
 
+
 /* Footer links section */
 .footer-links {
-    display: flex;
-    /* flex: 3 1 600px; */
-    justify-content: space-between;
+    padding-top: 30px;
 }
 
-.footer-links .column {
-    display: flex;
-    gap: 40px;
-}
 
-.footer-links ul {
+.footer-links ul 
+{
     list-style: none;
+}
+
+.footer-links .div-links ul li a
+{
+    color: rgb(138, 138, 138);
+}
+
+.footer-links .div-links ul
+{
+    display: flex;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-mid
+{
+    display: flex;
 }
 
 .footer-links ul li {
@@ -1263,15 +1278,20 @@ footer {
     color: #ff6600;
 }
 
-/* Network section */
-.network {
-    flex: 1 1 200px;
+.h3-1 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #4d4d4d;
+
 }
 
-.network p {
-    font-weight: 700;
-    margin-bottom: 12px;
+/* Network section */
+.network {
+    display: flex;
+    gap: 3rem;
 }
+
 
 .network ul {
     list-style: none;
@@ -1281,7 +1301,7 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    font-size: 14px;
+    /* font-size: 24px; */
     color: #4d4d4d;
 }
 
@@ -1289,10 +1309,18 @@ footer {
     text-decoration: none;
     color: #4d4d4d;
     margin-left: 6px;
+    font-size: 15px;
     transition: color 0.3s ease;
 }
 
-.network ul li a:hover {
+.network ul li span
+{
+    width: 25px;
+    height: 25px;
+}
+
+.network ul li a:hover 
+{
     color: #ff6600;
 }
 
@@ -1361,6 +1389,16 @@ footer {
     font-weight: 700;
     font-size: 14px;
     transform: rotate(-10deg);
+}
+
+.footer-bottom-socialmedia
+{
+    margin-left: 40%;
+}
+
+.footer-1 .h3-1
+{
+    width: 50%;
 }
 
 /* Social media icons */

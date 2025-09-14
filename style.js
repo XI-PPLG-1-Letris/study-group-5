@@ -1,4 +1,4 @@
-const div2 = document.getElementById(`div-2`);
+const div2 = document.getElementById(`div-3`);
 const header = document.querySelector(`header`);
 
 window.addEventListener (`scroll`, () => {

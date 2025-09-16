@@ -4,29 +4,67 @@ body
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* Reset dan dasar */
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    background-color: #fff;
-}
 
 .header {
     border-bottom: 1px solid #ccc;
 }
 
-/* Bagian atas header */
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+/* Navbar container */
+nav {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+    padding: 2px 0; 
+}
+
+/* Navbar menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 5px; 
+    display: block;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+/* Efek hover dan aktif */
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ff4500;
+    border-bottom: 2px solid #ff4500;
+}
+
 .header-top {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 15px 170px;
+}
+
+/* Login/link masuk */
+.login a {
+    /* margin-left: 20px; */
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
 }
 
 /* Logo */
@@ -68,92 +106,51 @@ body {
     /* transition: background 0.3s ease; */
 }
 
-/* Login/link masuk */
-.login a {
-    /* margin-left: 20px; */
+.div-1 
+{
+    background-color: rgb(255, 73, 0);
+    margin-left: 5%; 
+    /* padding: 0; */
+    width: 90%;
+    height: 65px;
+    display: flex;
+}
+
+.div-1 a
+{
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+.div-1 a marquee
+{
+    padding-top: 24px;
+    width: 100%;
     font-weight: bold;
-    text-decoration: none;
-    color: #000;
+    font-size: 20px;
+
 }
 
-/* Navigasi menu bawah */
-.header-nav {
-    border-top: 1px solid #ccc;
-    padding: 10px 360px;
-    background-color: #fff;
-}
-
-.header-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    gap: 1rem;
-    overflow-x: auto;
-}
-
-.header-nav ul li a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-    white-space: nowrap;
-    padding: 5px 0;
-    display: block;
-}
-
-.header-nav ul li a:hover {
-    color: #ff3d00;
-    text-decoration: underline;
-}
-
-.div-2
+.div-1 button
 {
-    top: -190px;
-    position: fixed;
-    display: flex;
-    width: 62%;
-    height: 70px;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right,  #ff7e5f, #ffbd8a);
-    transform: translateX(32%);
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: 0.5s ease-in;
-}
-
-.div-2.show
-{
-    top: 0;
-}
-
-.div-2 ul
-{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding-right: 470px;
-    list-style: none;
-}
-
-.div-2 li a
-{
-    text-decoration: none;
-    color: white;
-}
-
-.div-2 img
-{
-    margin-right: 50px;
+    margin: 10px;
+    margin-left: 30px;
     border-radius: 10px;
+    border: 0;
+    text-align: start;
+    color: rgb(255, 73, 0);;
 }
 
-.div-2 h3
-{
-    color: white;
-    
+#topbanner {
+    width: 1350px;
+    height: 45px;
+    margin: 0 auto;
 }
-
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica,Arial,sans-serif;
+}
 #logo {
     margin-left: 145px;
     margin-right: 8px;
@@ -324,6 +321,7 @@ h1 a:hover {
 #articleImage img {
     width: 300;
     height: 190;
+    margin-left: 17%;
 }
 #articleHr {
     width: 46px;
@@ -522,26 +520,26 @@ h1 a:hover {
     float: left;
     margin-top: 10px;
 }
-#shareWithBBC {
+#shareWithliputan6 {
     margin-left: 30px;
     float: left;
 }
-#shareWithBBC h3 {
+#shareWithliputan6 h3 {
     margin-left: 0px;
 }
-#shareWithBBC a {
+#shareWithliputan6 a {
     text-decoration: none;
     color: black;
 }
-#shareWithBBC a:hover {
+#shareWithliputan6 a:hover {
     color: #1167A8;
 }
-#shareWithBBC img {
+#shareWithliputan6 img {
     float: left;
     margin-right: 10px;
     margin-top: -2px;
 }
-.shareWithBBCBold {
+.shareWithliputan6Bold {
     font-weight: bold;
 }
 #followUs {
@@ -554,14 +552,14 @@ h1 a:hover {
     font-size: 20px;
 }
 #facebook {
-   float: left;
-   width: 150px;
-   height: 20px;
-   background: #f7f7f7;
-   margin-right: 6px;
-   margin-bottom: 20px;
-   padding: 12px;
-   border-bottom: 4px solid #3C5A98;
+    float: left;
+    width: 150px;
+    height: 20px;
+    background: #f7f7f7;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-bottom: 4px solid #3C5A98;
 }
 .ftLink a {
     text-decoration: none;
@@ -980,7 +978,7 @@ h1 a:hover {
     font-weight: bold;
     margin: 0px 5px 10px 0px;
 }
-#bbcFuture {
+#liputan6Future {
     margin-left: 120px;
     width: 700px;
     float: left;
@@ -988,7 +986,7 @@ h1 a:hover {
 #futureHeading {
     font-size: 25px;
 }
-.bbcDiv {
+.liputan6Div {
     float: left;
     width: 315px;
     margin-right: 10px;
@@ -1013,7 +1011,7 @@ h1 a:hover {
     font-size: 14px;
 }
 #lastSection {
-    margin-left: 425px;
+    margin-left: 145px;
     width: 1050px;
     float: left;
 }
@@ -1089,77 +1087,77 @@ h1 a:hover {
 .podcastRSub a {
     color: #BDBDBD;
 }
-#moreBBCHeading {
+#moreliputan6Heading {
     font-size: 24px;
 }
-.moreBBCDivF {
+.moreliputan6DivF {
     float: left;
     background-color: #EDEDED;
     width: 247px;
     margin-right: 20px;
     margin-bottom: 17px;
 }
-.moreBBCDivF2 {
+.moreliputan6DivF2 {
     margin-right: 0px;
 }
-.moreBBCDivFHeading a {
+.moreliputan6DivFHeading a {
     color: red;
     text-decoration: none;
     margin-left: 7px;
     font-size: 17px;
 }
-.moreBBCDivFHeading a:hover {
+.moreliputan6DivFHeading a:hover {
     color: #1167A8;
 }
-.moreBBCDivFHr {
+.moreliputan6DivFHr {
     margin: -10px 0px 0px 7px;
     width: 45px;
     height: 1px;
     background-color: red;
     border: none;
 }
-.moreBBCDivFTitle  {
+.moreliputan6DivFTitle  {
     margin: 10px 0px 7px 7px;
 }
-.moreBBCDivFTitle a {
+.moreliputan6DivFTitle a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.moreBBCDivFTitle a:hover {
+.moreliputan6DivFTitle a:hover {
     color: #1167A8;
 }
-.moreBBCDivF img {
+.moreliputan6DivF img {
     width: 247px;
 }
-#BBCServices {
+#liputan6Services {
     width: 1350px;
     background-color: #2F2F2F;
     float: left;
 }
-.BBCServices2 {
+.liputan6Services2 {
     margin: 10px 0px 10px 145px;
 }
-#BBCServicesHeading {
+#liputan6ServicesHeading {
     color: white;
     font-size: 22px;
 }
-.BBCSer {
+.liputan6Ser {
     float: left;
     margin-bottom: 20px;
     margin-right: 105px;
 }
-.BBCSer img {
+.liputan6Ser img {
     float: left;
     margin-right: 5px;
 }
-.BBCSer a {
+.liputan6Ser a {
     float: left;
     color: white;
     text-decoration: none;
     margin-top: 6px;
 }
-.BBCSer a:hover {
+.liputan6Ser a:hover {
     text-decoration: underline;
 }
 #explore {
@@ -1208,14 +1206,9 @@ h1 a:hover {
     background-color: #949494;
 }
 
-
 footer {
     background-color: #f5f5f5;
     padding: 40px 60px 20px 60px;
-}
-
-.footer-top {
-    margin-left: 20%;
 }
 
 /* Brand logo section */
@@ -1225,26 +1218,57 @@ footer {
     /* flex: 1 1 250px; */
 }
 
+.brand-logo .Liputan6
+{
+    width: 200px;
+}
+
 .brand-logo img {
-    width: 78px;
+    width: 85px;
     height: auto;
     object-fit: contain;
 }
 
+
 /* Footer links section */
+footer {
+  width: 100%;              /* Lebar penuh */
+  background: #f7f7f7;      /* Warna abu muda */
+    padding: 30px 20px;
+    text-align: center;       /* Teks rata tengah */
+    color: #333;
+    clear: both;              /* Supaya gak ketarik elemen float */
+  position: relative;       /* Tetap di alur halaman */
+    bottom: 0;
+}   
+
+
 .footer-links {
-    display: flex;
-    /* flex: 3 1 600px; */
-    justify-content: space-between;
+    padding-top: 30px;
 }
 
-.footer-links .column {
-    display: flex;
-    gap: 40px;
-}
 
-.footer-links ul {
+.footer-links ul 
+{
     list-style: none;
+}
+
+.footer-links .div-links ul li a
+{
+    color: rgb(138, 138, 138);
+}
+
+.footer-links .div-links ul
+{
+    display: flex;
+    column-gap: 5rem;
+    row-gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-mid
+{
+    display: flex;
 }
 
 .footer-links ul li {
@@ -1263,139 +1287,14 @@ footer {
     color: #ff6600;
 }
 
-/* Network section */
-.network {
-    flex: 1 1 200px;
+.footer-bottom-socialmedia
+{
+    margin-left: 40%;
 }
 
-.network p {
-    font-weight: 700;
-    margin-bottom: 12px;
-}
-
-.network ul {
-    list-style: none;
-}
-
-.network ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #4d4d4d;
-}
-
-.network ul li a {
-    text-decoration: none;
-    color: #4d4d4d;
-    margin-left: 6px;
-    transition: color 0.3s ease;
-}
-
-.network ul li a:hover {
-    color: #ff6600;
-}
-
-/* Icons with colored backgrounds for network */
-.icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18px;
-    height: 18px;
-    font-weight: 700;
-    font-family: Arial, sans-serif;
-    font-style: normal;
-    font-size: 12px;
-    color: white;
-    border-radius: 50%;
-}
-
-.liputan6 {
-    background-color: #ff6600;
-}
-
-.bola-com {
-    background-color: #2d9a4e;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 15px;
-}
-
-.bola-net {
-    background-color: transparent;
-    color: #000;
-    font-style: italic;
-    font-weight: 700;
-    font-size: 18px;
-    padding-left: 2px;
-}
-
-.brilio {
-    background-color: #bd1f59;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-.fimela {
-    background-color: #a10047;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-.kapanlagi {
-    background: linear-gradient(to right, #fa4a1f, #ffde00);
-    color: black;
-    font-weight: 700;
-    font-size: 11px;
-}
-
-.merdeka {
-    background-color: #6c19ab;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-.otosia {
-    background-color: #c4232b;
-    font-weight: 700;
-    font-size: 14px;
-    transform: rotate(-10deg);
-}
-
-/* Social media icons */
-.social-media {
-    display: flex;
-    gap: 14px;
-    align-items: center;
-    flex: 1 1 150px;
-    margin-top: 16px;
-}
-
-.social-media a {
-    display: inline-flex;
-    padding: 6px 9px;
-    border-radius: 4px;
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    transition: background-color 0.3s ease;
-}
-
-.social-media a.facebook {
-    background-color: #3b5998;
-}
-
-.social-media a.twitter {
-    background-color: #1da1f2;
-}
-
-.social-media a.pinterest {
-    background-color: #cc2127;
-}   
-
-.social-media a.youtube {
-    background-color: #ff0000;
+.footer-1 .h3-1
+{
+    width: 50%;
 }
 
 /* Footer bottom */
@@ -1407,8 +1306,57 @@ footer {
     padding-bottom: 10px;
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #dcdcdc;
-    margin-top: 30px;
-}
+    footer {
+      background: #f7f7f7; /* warna abu muda */
+        padding: 30px 20px;
+        text-align: center;
+        color: #333;
+    }
+
+    /* Logo */
+    .footer-logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #ff4500;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+    /* Link navigasi */
+    .footer-links {
+        margin: 15px 0;
+    }
+
+    .footer-links a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #555;
+        font-size: 14px;
+    }
+
+    .footer-links a:hover {
+        color: #ff4500;
+    }
+
+    /* Sosial media */
+    .social-icons {
+        margin: 20px 0;
+    }
+
+    .social-icons a {
+        margin: 0 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #555;
+    }
+
+    .social-icons a:hover {
+        color: #ff4500;
+    }
+
+    /* Copyright */
+    .copyright {
+        font-size: 13px;
+        color: #888;
+        margin-top: 15px;
+    }

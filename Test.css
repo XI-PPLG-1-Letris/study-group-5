@@ -1,0 +1,45 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+main
+{
+    height: 2000px; /* biar ada scroll */
+    padding: 20px;
+}
+
+header {
+    height: 200px;
+    background: linear-gradient(to right, #ff7e5f, #ffbd8a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    }
+
+.div-1
+{
+    position: fixed;
+    top: -90px;
+    background-color: aqua;
+    transition: top 0.4s ease-in-out;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #333;
+    background-color: aqua;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: top 0.4s ease; 
+}
+
+.div-1.show
+{
+    top: 0;
+}

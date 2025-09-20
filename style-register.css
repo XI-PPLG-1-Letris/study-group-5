@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-box {
+    position: relative;
+    background: #fff;
+    padding: 30px 25px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    color: #aaa;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.desc {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Tombol Google */
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.btn-google img {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-google:hover {
+    background: #f2f2f2;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    color: #888;
+    font-size: 13px;
+    margin: 20px 0;
+}
+
+.line::before,
+.line::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+.line span {
+    padding: 0 8px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Tombol utama */
+.btn-main {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: #b7a9a9;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.btn-main:hover {
+    background: #9e8f8f;
+}
+
+.login {
+    font-size: 13px;
+    color: #555;
+}
+
+.login a {
+    color: #5b44ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}

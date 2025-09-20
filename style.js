@@ -1,12 +1,12 @@
-const div2 = document.getElementById(`div-3`);
-const header = document.querySelector(`header`);
+// const div2 = document.getElementById(`div-3`);
+// const header = document.querySelector(`header`);
 
-window.addEventListener (`scroll`, () => {
-    if (window.scrollY > header.offsetHeight) {
-        div2.classList.add(`show`)
-    }
-    else
-    {
-        div2.classList.remove(`show`)
-    }
-})
+// window.addEventListener (`scroll`, () => {
+//     if (window.scrollY > header.offsetHeight) {
+//         div2.classList.add(`show`)
+//     }
+//     else
+//     {
+//         div2.classList.remove(`show`)
+//     }
+// })

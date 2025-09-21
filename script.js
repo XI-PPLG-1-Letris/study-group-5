@@ -1,7 +1,7 @@
 // Tombol Back to Top
 const backToTop = document.createElement("button");
 backToTop.innerText = "↑";
-backToTop.classList.add("back-to-top"); // pakai class, bukan inline style
+backToTop.classList.add("back-to-top");
 document.body.appendChild(backToTop);
 
 window.addEventListener("scroll", () => {
